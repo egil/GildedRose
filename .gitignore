@@ -20,6 +20,8 @@ bld/
 build_output/
 .build/
 
+*.vs
+
 # Roslyn cache directories
 *.ide/
 

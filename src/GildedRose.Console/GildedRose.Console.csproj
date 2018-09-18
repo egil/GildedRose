@@ -11,6 +11,8 @@
     <AssemblyName>GildedRose.Console</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,12 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Inventory\AgedBrieItemUpdater.cs" />
+    <Compile Include="Inventory\BackstagePassesItemUpdater.cs" />
+    <Compile Include="Inventory\ConjuredItemUpdater.cs" />
+    <Compile Include="Inventory\GeneralItemUpdater.cs" />
+    <Compile Include="Inventory\InventoryUpdater.cs" />
+    <Compile Include="Inventory\Item.cs" />
+    <Compile Include="Inventory\ItemUpdater.cs" />
+    <Compile Include="Inventory\SulfurasItemUpdater.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
